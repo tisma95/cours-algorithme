@@ -1,0 +1,53 @@
+Exercice 1:
+
+	Début
+		Variables A, B, C en Chaînes
+		A <- "423"
+		B <- "12"
+		C <- A + B
+	Fin 
+
+	On exécute cet algorithme comme suit:
+	A <- "423" implique que la variable A contient la chaîne de caractères 423
+	B <- "12" implique que la variable B contient la chaîne de caractères 12
+	C <- A + B ici on affecte à la variable C la somme de A et B or ce sont des variables de type chaîne de caractères donc l'addition ici est une concaténation.
+
+	La variable C contient donc la chaîne de caractères 42312.
+
+ 
+Exercice 2:
+
+	Début 
+		Variables A, B, C en Entiers
+		A <- 423
+		B <- 12
+		C <- A + B
+	Fin
+
+	On exécute cet algorithme comme suit:
+	A <- 423 implique que la variable A contient le nombre 423
+	B <- 12 implique que la variable B contient le nombre 12
+	C <- A + B ici on affecte à la variable C la somme de A et B, comme A et B sont des entiers alors on effectue une addition.
+
+	La variable C contient donc le nombre 435.
+
+
+Exercice 3:
+
+	Début 
+		Variables phrase, nom en Chaînes
+		Variable age en Entier
+		nom <- "Oscar"
+		age <- 12
+		phrase <- nom + " a " + age + " ans"
+	Fin
+	
+		On exécute cet algorithme comme suit:
+		nom <- "Oscar" ici on affecte à la variable nom la chaîne de caractères Oscar
+		age <- 12 ici on affecte à la variable age le nombre 12
+		phrase <- nom + " a " + age + " ans " ici on effectue une concacténation de :
+		+ la variable chaîne nom
+		+ la valeur " a "
+		+ la variable entière age
+		+ la vaaleur " ans"
+		La variable phrase contient donc la chaine de caractère "Oscar a 12 ans"

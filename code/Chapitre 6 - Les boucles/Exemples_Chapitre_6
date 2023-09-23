@@ -1,0 +1,116 @@
+	
+	
+	
+	TANTQUE condition FAIRE
+	   ...
+	FINTANTQUE
+	
+	OU
+	
+	TantQue condition Faire
+		.....
+	FinTantQue
+	
+	
+	REPETER 
+		...
+	TANTQUE condition
+
+	Ou 
+	
+	Répéter 
+		...
+	TantQue condition
+	
+	
+	Sujet 1:
+	
+	Début
+		Variables nombre, double en Entiers
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		TantQue nombre < 0 Faire
+			Ecrire "Vous devez saisir un nombre positif"
+			Ecrire "Entrer un nombre:"
+			Lire nombre
+		FinTantQue
+		double <- nombre * 2
+		Ecrire "Le double de " + nombre + " est :" + double
+	Fin
+		
+	
+	
+	Sujet 2
+	
+	Début
+		Variables nombreMagique, nombreSaisi en Entiers
+		nombreMagique <- 24
+		Répéter
+			Ecrire "Entrer le nombre magique:"
+			Lire nombreSaisi
+			Si nombreSaisi < nombreMagique Alors
+				Ecrire "Le nombre magique est plus grand"
+			SinonSi nombreSaisi > nombreMagique Alors
+				Ecrire "Le nombre magique est plus petit"
+			Sinon
+				Ecrire "Bingo, vous avez trouvé le nombre magique"
+			FinSi
+		TantQue nombreMagique <> nombreSaisi
+	Fin
+	
+	
+
+		Pour nomVariable <- nombreDepart à nombreFin Pas nombreDePas Faire
+			...
+		Suivant
+		
+		Ou
+		
+		POUR nomVariable <- nombreDepart A nombreFin PAS nombreDePas FAIRE
+			...
+		Suivant
+		
+		
+		Boucle 1
+		Pour a <- 0 à 10 Pas 1 Faire             
+			Ecrire a + " "
+		Suivant
+		
+		Boucle 2
+		Pour a <- 0 à 10 Pas 2 Faire
+			Ecrire a + " "
+		Suivant	
+
+	Sujet 3
+	
+	Début
+		Variables nombre, somme, compteur en Entiers
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		somme <- 0
+		Pour compteur <- 0 à nombre Pas 1 Faire
+			somme <- compteur + somme
+		Suivant
+		Ecrire "La somme des nombres entre 0 et " + nombre + " est " + somme 
+	Fin
+	
+	
+	Début
+		Variables a, b en Entiers
+		b <- 0
+		a <- 1
+		Répéter
+			b <- b + 1
+		TantQue a = 1
+		Ecrire b
+	Fin
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

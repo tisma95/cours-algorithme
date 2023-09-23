@@ -1,0 +1,11 @@
+Exercice 1:
+
+	Début
+		Variables val, double en Entiers
+		val <- 231
+		double <- val*2
+		Ecrire val
+	Fin 
+
+
+

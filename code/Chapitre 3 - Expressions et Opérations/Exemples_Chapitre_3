@@ -1,0 +1,33 @@
+Exemple 1 :
+
+	Algo: Calcul de "12*(3 + 5)"
+
+	Début
+		Variables totalAddition, total en Entier
+		totalAddition <- 3 + 5
+		total <- 12 * totalAddition
+	Fin
+
+
+
+
+Exmple 2:
+	
+	somme <- 2 + 3
+	total <- "Le résultat de 2 + 3 =" + somme
+	
+	
+Exemple 3:
+	
+	nom <- "GREEN"
+	prenom <- "OSCAR"
+	nomComplet <- nom + prenom // Ici nomComplet contiendra "GREENOSCAR" en un seul mot
+	
+	nom <- "GREEN"
+	prenom <- "OSCAR"
+	nomComplet <- nom + " " + prenom // Ici nomComplet contiendra "GREEN OSCAR" en deux mots
+	
+	
+	
+	
+	

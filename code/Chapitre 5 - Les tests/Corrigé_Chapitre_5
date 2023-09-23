@@ -1,0 +1,52 @@
+Exercice 1:
+
+	Début
+		Variables val, double en Entiers
+		val <- 231
+		double <- val*2
+		Ecrire val
+		Ecrire double
+	Fin 
+
+On exécute l'algorithme comme suit :
+
+val <- 231 implique une affectation à la variable val la valeur 231
+double <- val*2 implique une affectation à la variable double, le double de la valeur de la variable val
+Ecrire val ici l'algortihme affiche le contenu de la variable val soit 231
+Ecrire double ici l'algorithme affiche le contenu de la variable double soit 462
+
+
+Exercice 2: 
+
+	Début
+		Variables nombre, resultat en Réels
+		Ecrire "Entrer un nombre svp:"
+		Lire nombre
+		resultat <- (nombre*3) + 2
+		Ecrire resultat
+	Fin
+	
+
+Exercice 3
+
+	Début
+		Variable nbre en Entier
+		Variables prixTotal, prixArticle en Réels
+		Ecrire "Entrer le prix de l'article:"
+		Lire prixArticle
+		Ecrire "Entrer le nombre d'articles:"
+		Lire nbre
+		prixTotal <- nbre*prixArticle
+		Ecrire "Le prix total est:" + prixTotal
+	Fin
+
+Exercice 4
+
+	Début
+		Variable nom en Chaîne
+		Ecrire "Entre votre nom svp:"
+		Lire nom
+		Ecrire "Hello " + nom
+	Fin
+	
+

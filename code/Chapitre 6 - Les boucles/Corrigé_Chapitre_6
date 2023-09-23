@@ -1,0 +1,164 @@
+Exercice 1 :
+
+	Début
+		Variables nombre, somme, compteur en Entiers
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		somme <- 0
+		compteur <- 0
+		TantQue compteur < nombre Faire 
+			somme <- somme + compteur
+			compteur <- compteur + 1
+		FinTantQue 
+		Ecrire "La somme des nombres entre 0 et " + nombre + " est :" + somme  
+	Fin 
+	
+	
+	Début 
+		Variables nombre, somme, compteur en Entiers
+		somme <- 0
+		compteur <- 0
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		Répéter
+			somme <- somme + compteur
+			compteur <- compteur + 1
+		TantQue compteur < nombre
+		Ecrire "La somme des nombres entre 0 et " + nombre + " est :" + somme  
+	Fin 
+	
+	
+	Exercice 2:
+	
+	Début 
+		Variable nombre en Entier 
+		Répéter 
+			Ecrire "Entrer un nombre entre 1 et 3:"
+			Lire nombre
+			Si nombre < 1 Ou nombre > 3 Alors 
+				Ecrire "Vous devez saisir un nombre entre 1 et 3"
+			FinSi 
+		TantQue nombre < 1 Ou nombre > 3
+		Ecrire "Vous avez saisi " + nombre + " qui est compris entre 1 et 3"
+	Fin 
+	
+	
+	
+	Exercice 3:
+	
+	Début 
+		Variable nombre en Entier
+		Ecrire "Entrer un nombre entre 10 et 20:"
+		Lire nombre 
+		TantQue nombre < 10 Ou nombre > 20 Faire		
+			Si nombre > 20 Alors
+				Ecrire "Plus petit !"
+			Sinon			
+				Ecrire "Plus grand !"
+			FinSi
+			Ecrire "Entrer un nombre entre 10 et 20:"
+			Lire nombre 
+		FinTantQue
+		Ecrire "Vous avez saisi " + nombre + " qui est compris entre 10 et 20"
+	Fin 
+	
+	
+	Exercie 4:
+	
+	Début
+		Variables nombre, debut, fin, compteur en Entiers
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		debut <- nombre + 1
+		fin <- nombre + 11
+		Ecrire "Les dix nombres suivants " + nombre + " sont:"
+		Pour compteur <- debut à fin Pas 1 Faire
+			Ecrire compteur
+		Suivant
+	Fin
+	
+	Exercice 5:
+	
+	Début
+		Variables nombre, fin, compteur, somme en Entiers
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		fin <- nombre + 1
+		somme <- 0
+		Pour compteur <- 1 à fin Pas 1 Faire 
+			somme <- somme + compteur
+		Suivant
+		Ecrire "La somme des entiers jusqu'à " + nombre + " est :" + somme
+	Fin
+	
+	
+	Exercice 6
+	
+	Début
+		Variables nombre, compteur en Entiers
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		Ecrire "La table de multiplication de " + nombre + " est:"
+		Pour compteur <- 0 à 11 Pas 1 Faire
+			Ecrire nombre + "x" + compteur + "=" + (nombre*compteur)
+		Suivant
+	Fin 
+	
+	
+	Exercice 7:
+	
+	Début
+		Variables nombre, factoriel, compteur en Entiers
+		Ecrire "Entrer un nombre:"
+		Lire nombre
+		factoriel <- 1
+		TantQue (compteur < nombre) Ou (compteur = nombre) Faire
+			factoriel <- (factoriel * compteur)
+			compteur <- compteur + 1
+		FinTantQue
+		Ecrire "Le factoriel de " + nombre + " est :" + factoriel
+	Fin
+	
+	
+	Exercice 8:
+	
+	Début
+		Variables max, nombre, compteur en Entiers
+		compteur <- 1
+		Ecrire "Entrer le nombre 1:"
+		Lire nombre
+		max <- nombre
+		Pour compteur <- 2 à 21 Pas 1 Faire
+			Ecrire "Entrer le nombre " + compteur + ":"
+			Lire nombre
+			Si nombre > max Alors
+				max <- nombre
+			FinSi
+		Suivant
+		Ecrire "Le plus grand de ces nombre est :" + max
+	Fin
+	
+	
+	Exercice 9:
+	
+	Début
+		Variables max, nombre, compteur, position en Entiers
+		compteur <- 1
+		Ecrire "Entrer le nombre 1:"
+		Lire nombre
+		max <- nombre
+		position <- 1
+		Pour compteur <- 2 à 21 Pas 1 Faire
+			Ecrire "Entrer le nombre " + compteur + ":"
+			Lire nombre
+			Si nombre > max Alors
+				max <- nombre
+				position <- compteur
+			FinSi
+		Suivant
+		Ecrire "Le plus grand de ces nombres est :" + max + " et c'est le nombre " + position
+	Fin
+	
+	
+	
+	

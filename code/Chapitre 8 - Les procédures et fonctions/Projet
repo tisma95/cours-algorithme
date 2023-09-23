@@ -1,0 +1,84 @@
+			
+			
+			
+			// Fonction qui demande le nom d'un élève
+			Fonction saisirNom(indice en Entier ) Retourne une Chaîne 
+				Variable nom en Chaîne 
+				nom <- ""
+				Répéter 
+					Ecrire "Entrer le nom de l'élève " + indice  + ":"
+					Lire nom
+					Si nom = "" Alors 
+						Ecrire "Vous devez saisir un nom"
+					FinSi
+				TantQue nom = ""
+				Renvoyer nom
+			FinFonction 
+			
+			
+			// Fonction qui demande la note d'un élève
+			Fonction saisirNote(indice en Entier ) Retourne un Réel
+				Variable note en Réel 
+				Ecrire "Entrer la note " + indice + ":"
+				Lire note 
+				TantQue note < 0 Ou note > 20 Faire 
+					Ecrire "Vous devez saisir une note entre 0 et 20 svp."
+					Ecrire "Entrer la note " + indice + ":"
+					Lire note
+				FinTantQue 
+				Renvoyer note
+			FinFonction
+			
+			// Fonction qui calcule la moyenne de 5 notes
+			Fonction calculMoyenne(note1 en Réel ,note2 en Réel ,note3 en Réel ,note4 en Réel , note5 en Réel ) Retourne un Réel 
+				Variables moyenne, somme en Réels 
+				somme <- note1 + note2 + note3 + note4 + note5
+				moyenne <- somme / 5
+				Renvoyer moyenne
+			FinFonction
+			
+			// Procédure qui affiche la description d'un élève
+			Procédure afficheDescription(indice en Entier ,nom en Chaîne ,moyenne en Réel )
+				Ecrire "Elève " + indice + ": Nom = " + nom + "; Moyenne = " + moyenne
+			FinProcédure
+
+			
+			
+			// Ecriture de l'algorithme
+			Début 
+				Tableau tabNoms[10] en Chaînes
+				Tableaux tabNotes[10][5], tabMoyenne[10] en Réels
+				Variables compteur1, compteur2 en Entiers
+				
+				Ecrire "Bienvenue, sur l'algorithme de calcul de moyenne"
+				
+				// Commencer la saisie des noms
+				Pour compteur1 <- 0 à 10 Pas 1 Faire 
+					tabNoms[compteur] <- saisirNom(compteur + 1)
+				Suivant 
+				
+				// Commencer la saisie des notes des élèves
+				Pour compteur1 <- 0 à 10 Pas 1 Faire 
+					Ecrire "Saisie des notes de l'élève:" + tabNoms[compteur1]
+					Pour compteur2 <- 0 à 5 Pas 1 Faire 
+						tabNotes[compteur1][compteur2] <- saisirNote(compteur2 + 1)
+					Suivant 
+				Suivant 
+				
+				// Commencer le calcul des moyennes 
+				Pour compteur1 <- 0 à 10 Pas 1 Faire 
+					tabMoyenne[compteur1] <- calculMoyenne(tabNotes[compteur1][0], tabNotes[compteur1][1], tabNotes[compteur1][2] ,tabNotes[compteur1][3], tabNotes[compteur1][4])
+				Suivant 
+				
+				// Afficher les résultats
+				Pour compteur1 <- 0 à 10 Pas 1 Faire 
+					afficheDescription(compteur1 + 1, tabNoms[compteur1], tabMoyenne[compteur1])
+				Suivant 
+				
+				Ecrire "Merci d'avoir utilisé l'algorithme de calcul de moyenne"
+				
+			Fin 
+			
+			
+			
+			

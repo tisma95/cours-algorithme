@@ -1,0 +1,54 @@
+		
+		
+		Tableau nom_du_tableau[taille_du_tableu] en Type_du_tableau 
+							
+							Ou
+							
+		TABLEAU nom_du_tableau[taille_du_tableu] en Type_du_tableau
+		
+		
+		
+		Tableau tab[3] en Entiers //=> Est un tableau de 3 entiers
+		
+		Tableau noms[4] en Chaînes //=> Est un tableau de 4 chaînes de caractères qui peut contenir : Ismael, Oscar, Benjamin, John
+		
+		
+		noms [3] <- "Ismael" //=> Va remplacer la valeur de la valeur à l'indice 3 du tableau par Ismael 
+		
+		
+		
+		Exemple 1 :
+		
+		Début 
+			Variable compteur en Entier
+			Variable nom en Chaîne
+			Tableau tableauNoms[5] en Chaînes
+			Pour compteur <- 0 à 5 Pas 1 Faire
+				Ecrire "Entrer le nom " + compteur + ":"
+				Lire nom
+				tableauNoms[compteur] <- nom
+			Suivant
+			
+			Ecrire "Vous avez saisi les noms suivants:"
+			
+			Pour compteur <- 0 à 5 Pas 1 Faire
+				Ecrire "Nom " + (compteur + 1) + ":" + tableauNoms[compteur]
+			Suivant
+		Fin 
+		
+		
+		
+		Tableau tabNombres[2][3] en Entiers
+		
+		
+		
+		Ecrire tabNombres[1][2] //=> Affichera 90
+		
+		
+		tabNombres[1][2] <- 789 //=> Remplacera la valeur de 90 par 789 
+		
+		
+		
+
+		
+		

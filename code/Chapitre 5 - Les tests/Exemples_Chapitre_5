@@ -1,0 +1,142 @@
+	
+	
+		SI condition ALORS 
+			...
+		FINSI 
+		
+		Ou
+		
+		Si condition Alors 
+			...
+		FinSi 
+		
+		
+		
+		SI condition ALORS  
+			...
+		SINON 
+			...
+		FINSI 
+		
+		Ou 
+		
+		Si condition Alors
+			...
+		Sinon 
+			...
+		FinSi 
+		
+		
+		
+		
+		Début
+			Variables secret, motDePasse en Chaînes
+			secret <- "OROdeIRIestROIdeRIO"
+			Ecrire "Entrer le mot de passe:"
+			Lire motDePasse
+			Si motDePasse = secret Alors
+				Ecrire "Mot de passe correct"
+			Sinon
+				Ecrire "Mot de passe incorrect"
+			FinSi 
+		Fin 
+		
+		
+		Début
+			Variables secret, motDePasse en Chaînes
+			secret <- "OROdeIRIestROIdeRIO"
+			Ecrire "Entrer le mot de passe:"
+			Lire motDePasse
+			Si Non (motDePasse = secret) Alors
+				Ecrire "Mot de passe incorrect"
+			Sinon
+				Ecrire "Mot de passe correct"
+			FinSi 
+		Fin 
+		
+		
+		Début
+			Variables secret, motDePasse en Chaînes
+			secret <- "OROdeIRIestROIdeRIO"
+			Ecrire "Entrer le mot de passe:"
+			Lire motDePasse
+			Si motDePasse <> secret Alors
+				Ecrire "Mot de passe incorrect"
+			Sinon
+				Ecrire "Mot de passe correct"
+			FinSi 
+		Fin 
+		
+		
+		Début
+			Variables motDePasseSaisi, motDePasse, pseudo, pseudoSaisi en Chaînes
+			pseudo <- "john"
+			motDePasse <- "doé"
+			Ecrire "Entrer votre nom d'utilisateur:"
+			Lire pseudoSaisi
+			Ecrire "Entrer votre mot de passe:"
+			Lire motDePasseSaisi
+			Si (pseudoSaisi <> pseudo) Ou (motDePasse <> motDePasseSaisi) ALORS
+				Ecrire "Interdit de se connecter"
+			Sinon
+				Ecrire "Autorisé à se connecter"
+			FinSi
+		Fin
+		
+		
+		
+		Si condition Alors 
+			Si condition Alors
+				...
+			Sinon
+			 ...
+			FinSi
+		Sinon
+			Si condition Alors
+				...
+			Sinon
+				...
+			FinSi
+		FinSi 
+		
+		Ou
+		
+		Si condition Alors
+			...
+		SinonSi condition Alors
+			...
+		SinonSi condition Alors
+			...
+		Sinon
+			...
+		FinSi
+		
+		
+		
+		
+		Début 
+			Variables motDePasseSaisi, motDePasse, pseudo, pseudoSaisi en Chaînes
+			pseudo <- "john"
+			motDePasse <- "doé"
+			Ecrire "Entrer votre nom d'utilisateur:"
+			Lire pseudoSaisi
+			Ecrire "Entrer votre mot de passe:"
+			Lire motDePasseSaisi
+			Si Non (pseudoSaisi = pseudo ) ET Non (motDePasseSaisi = motDePasse) Alors
+				Ecrire "Nom d'utilisateur et mot de passe incorrects"
+			SinonSi (pseudoSaisi <> pseudo) OU (motDePasseSaisi <> motDePasse) Alors
+					Si pseudo <> pseudo Alors
+						Ecrire "Nom d'utilisateur incorrect"
+					Sinon
+						Ecrire "Mot de passe incorrect"
+					FinSi
+			Sinon
+				Ecrire "Utilisateur autorisé"
+			FinSi
+		Fin
+		
+		
+		
+		
+		
+		

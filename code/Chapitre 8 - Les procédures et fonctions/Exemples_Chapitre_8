@@ -1,0 +1,90 @@
+		
+		
+		Fonction nom_de_la_fonction(parametre1 en Type_du_parametre, parametre2 en Type_du_parametre, ...) Retourne un type_de_retour
+			Renvoyer valeur_de_retour 
+		FinFonction 
+		
+						Ou
+						
+						
+		FONCTION nom_de_la_fonction(parametre1 en Type_du_parametre, ...) RETOURNE un type_de_retour
+			RENVOYER valeur_de_retour 
+		FINFONCTION 
+		
+		
+		
+		
+		Début 
+			Variables nbre, double en Entiers 
+			nbre <- 2
+			double <- CalculDouble(nbre)
+			Ecrire "Le double de " + nbre + " est :" + double
+		Fin 
+		
+		
+		
+		// Définition de la fonction
+		Fonction CalculDouble(nombre en Entier ) Retourne  un Entier
+			Variable doubleDeNombre en Entier 
+			doubleDeNombre <- nombre * 2
+			Renvoyer doubleDeNombre
+		FinFonction
+		
+		// Définition de l'algorithme appelant
+		Début 
+			Variables nbre, double en Entiers
+			Ecrire "Veuillez entrer un nombre:"
+			Lire nbre
+			double <- CalculDouble(nbre)
+			Ecrire "Le double de " + nbre + " est " + double 
+		Fin 
+		
+		
+		
+		// Définition de la fonction
+		Fonction DemanderNom() Retourne une Chaîne
+			Variable nom en Chaîne
+			Ecrire "Quel est votre nom ?"
+			Lire nom
+			Renvoyer nom
+		FinFonction 
+		
+		// Définition de l'algorithme appelant
+		Début 
+			Variable nom en Chaîne
+			nom <- DemanderNom()
+			Ecrire "Hello " + nom 
+		Fin 
+		
+		
+		
+		Procédure nom_de_la_procédure(parametre1 en Type_du_parametre, parametre2 en Type_du_parametre, ...)
+			...
+			
+		FinProcédure
+										
+										Ou 
+										
+		PROCEDURE nom_de_la_procédure(parametre1 en Type_du_parametre, parametre2 en Type_du_parametre, ...)
+			...
+			
+		FINPROCEDURE
+		
+		// Définition de la procédure
+		Procédure calculEtAfficheDouble (nombre en Entier )
+			Variable double en Entier
+			double <- nombre * 2
+			Ecrire "Le double de " + nombre + " est :" + double
+		FinProcédure
+		
+		// Définition de l'algorithme appelant
+		Début
+			Variable nombre en Entier 
+			Ecrire "Entrer un nombre:"
+			Lire nombre
+			calculEtAfficheDouble(nombre)
+			Ecrire "Voilà , vous avez le résultat"
+		Fin 
+		
+		
+		

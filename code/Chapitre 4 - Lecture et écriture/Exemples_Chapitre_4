@@ -1,0 +1,39 @@
+Exemple 1 :
+
+	Algo: Calcul du carré d'un nombre
+
+	Début
+		Variables resultat en Entier
+		resultat <- 2^2 
+	Fin
+
+	
+	
+Exemple 2 :
+
+	Algo: Calcul du carré d'un nombre
+
+	Début
+		Variables nbre, resultat  en Entiers
+		Lire nbre // Ici l'algorithme va attendre la saisie de l'utilisateur
+		resultat <- nbre^2 // Si l'utilisateur saisit 2 le resultat sera 4, s'il saisit 8, le resultat sera 64... 
+	Fin 
+	
+
+Exemple 3 :
+
+	Algo: Calcul du carré d'un nombre
+
+	Début
+		Variables nbre, resultat en Entiers
+		Ecrire "Entrer un nombre" // Va afficher un message pour prévénir l'utilisateur qu'il va saisir un nombre
+		Lire nbre // Ici l'algorithme va attendre la saisie de l'utilisateur
+		Ecrire "Vous avez saisi " + nbre // Affichera le nombre saisi par l'utilisateur par exemple vous avez saisi 4 
+		resultat <- nbre^2 // Si l'utilisateur saisit 2 le résultat sera 4, s'il saisit 8, le résultat sera 64... 
+		Ecrire resultat // Affichera uniquement le résultat de l'opération du carré du nombre par exemple "4" => Si l'utilisateur a entré 2
+	Fin 
+	
+	
+	
+	
+	

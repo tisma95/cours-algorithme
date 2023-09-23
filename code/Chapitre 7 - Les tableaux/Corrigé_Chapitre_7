@@ -1,0 +1,120 @@
+Exercice 1:
+		
+		Début 
+			Tableau tabNombres[7] en Entiers 
+			Variable compteur en Entier 
+			
+			Pour compteur <- 0 à 7 Pas 1 Faire 
+				tabNombres[compteur] <- 0
+			Suivant
+		Fin 
+		
+		
+Exercice 2:
+
+		Début 
+			Tableau tabVoyelles[6] en Caractères 
+			
+			tabVoyelles[0] <- "a"
+			tabVoyelles[1] <- "e"
+			tabVoyelles[2] <- "i"
+			tabVoyelles[3] <- "o"
+			tabVoyelles[4] <- "u"
+			tabVoyelles[5] <- "y"
+			
+		Fin 
+		
+		
+Exercice 3:
+		
+		Début 
+			Tableau tabNombres[10] en Entiers 
+			Variables compteur, somme en Entiers
+			
+			Pour compteur <- 0 à 10 Pas 1 Faire
+				Ecrire "Entrer le nombre " + (compteur + 1) + ":"
+				Lire tabNombres[compteur]
+ 			Suivant
+			
+			somme <- 0
+			Pour compteur <- 0 à 10 Pas 1 Faire
+				somme <- somme + tabNombres[compteur]
+			Suivant
+			
+			Ecrire "La somme de ces dix nombres est :" + somme
+		Fin 
+		
+		
+Exercice 4
+
+		Début
+			Tableau tabNotes[20] en Réels 
+			Variable compteur en Entiers 
+			Variables somme, moyenne en Réels 
+				
+			Pour compteur <- 0 à 20 Pas 1 Faire
+				Ecrire "Entrer la note " + (compteur + 1) + ":"
+				Lire tabNotes[compteur]
+			Suivant
+			
+			somme <- 0
+			Pour compteur <- 0 à 20 Pas 1 Faire
+				somme <- somme + tabNotes[compteur]
+			Suivant
+			
+			moyenne <- somme / 20
+			
+			Ecrire "La moyenne de ces notes est :" + moyenne
+		Fin 
+		
+		
+
+Exercice 5:
+
+		Début
+			Tableaux tab1Nombres[8], tab2Nombres[8], tabSomme[8] en Entiers
+			Variable compteur en Entier 
+			
+			Ecrire "Saisie des nombres du tableau 1"
+			Pour compteur <- 0 à 8 Pas 1 Faire
+				Ecrire "Entrer le nombre " + (compteur + 1) + " du tableau 1:"
+				Lire tab1Nombres[compteur]
+			Suivant
+			
+			Ecrire "Saisie des nombres du tableau 2"
+			Pour compteur <- 0 à 8 Pas 1 Faire
+				Ecrire "Entrer le nombre " + (compteur + 1) + " du tableau 2:"
+				Lire tab2Nombres[compteur]
+			Suivant
+			
+			Pour compteur <- 0 à 8 Pas 1 Faire
+				tabSomme[compteur] <- tab1Nombres[compteur] + tab2Nombres[compteur]
+			Suivant
+			
+			Ecrire "Le tableau somme de tableau 1 et tableau 2 est:"
+			Pour compteur <- 0 à 8 Pas 1 Faire
+				Ecrire tabSomme[compteur]
+			Suivant
+		Fin 
+		
+		
+		
+Exercice 6:
+
+	Début 
+		Tableau tableMultiplication[11][11] en Entiers
+		Variables ligne, colonne en Entiers
+		Pour ligne <- 0 à 11 Pas 1 Faire
+			Pour colonne <- 0 à 11 Pas 1 Faire
+				tableMultiplication[ligne][colonne] = ligne * colonne
+			Suivant 
+		Suivant
+		
+		Ecrire "La table de multiplication de 0 à 10 est:"
+		Pour ligne <- 0 à 11 Pas 1 Faire
+			Ecrire "Table de " + ligne
+			Pour colonne <- 0 à 11 Pas 1 Faire
+				Ecrire ligne + "x" + colonne + "=" + tableMultiplication[ligne][colonne]
+			Suivant 
+		Suivant
+	Fin 

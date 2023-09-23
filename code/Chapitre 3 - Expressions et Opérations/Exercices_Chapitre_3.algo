@@ -1,0 +1,31 @@
+Exercice 1:
+
+	Début
+		Variables A, B, C en Chaînes
+		A <- "423"
+		B <- "12"
+		C <- A + B
+	Fin 
+
+
+Exercice 2:
+
+	Début 
+		Variables A, B, C en Entiers
+		A <- 423
+		B <- 12
+		C <- A + B
+	Fin
+
+Exercice 3:
+
+	Début 
+		Variables phrase, nom en Chaînes
+		Variable age en Entier
+		nom <- "Oscar"
+		age <- 12
+		phrase <- nom + " a " + age + " ans"
+	Fin
+	
+
+

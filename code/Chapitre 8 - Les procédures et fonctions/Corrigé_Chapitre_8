@@ -1,0 +1,48 @@
+Exercice 1:
+		
+		// Définition de la fonction
+		Fonction saisirNombre () Retourne un Entier 
+			Variable nombre en Entier 
+			Répéter 
+				Ecrire "Entrer un nombre positif:"
+				Lire nombre
+				Si nombre = 0 Ou nombre < 0 Alors 
+					Ecrire "Vous devez fournir un nombre positif"
+				FinSi
+			TantQue nombre = 0 Ou nombre < 0
+			Renvoyer nombre 
+		FinFonction 
+		
+		
+		// Début de l'algorithme appelant
+		Début
+			Variable nombreSaisi en Entier 
+			nombreSaisi <- saisirNombre()
+			Ecrire "Vous avez saisi: " + nombreSaisi
+		Fin
+		
+		
+		
+Exercice 2:
+		
+		// Définition de la procédure
+		Procédure saisirNom()
+			Variable nom en Chaîne 
+			nom <- ""
+			Répéter
+				Ecrire "Entrer votre nom:"
+				Lire nom
+				Si nom = "" Alors
+					Ecrire "Vous devez fournir un nom."
+				FinSi
+			TantQue nom = ""
+			Ecrire "Hello " + nom
+		FinProcédure 
+		
+		// Définition de l'algorithme appelant
+		Début 
+			saisirNom()
+		Fin 
+		
+		
+		

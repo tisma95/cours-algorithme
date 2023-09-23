@@ -1,0 +1,127 @@
+Exercice 1:
+
+Début
+	Variables A, B en Entier 
+	A <- 1
+	B <- A + 3 
+	A <- 3
+Fin
+
+On exécute cet algorithme comme suit:
+A <- 1 implique A = 1
+B <- A + 3 implique A = 1 et B = 4
+A <- 3 ici on écrase l'ancienne valeur de A donc A = 3 et B = 4
+ 
+Les variables A et B auront donc: A = 3 et B = 4.
+
+
+Exercice 2:
+
+Début 
+	Variables A, B, C en Entier 
+	A <- 5
+	B <- 3
+	C <- A + B
+	A <- 2
+	C <- B - A
+Fin 
+
+On exécute cet algorithme comme suit:
+A <- 5 implique A = 5
+B <- 3 implique A = 5 et B = 3
+C <- A + B implique A = 5, B = 3 et C = 8
+A <- 2 implique A = 2, B = 3 et C = 8
+C <- B - A implique A = 2, B = 3 et C = 1
+
+Les variables A, B et C auront: A = 2, B = 3 et C = 1
+
+
+Exercice 3:
+
+Début 
+	Variables A, B en Entier 
+	A <- 5
+	B <- A + 4
+	A <- A + 1
+	B <- A - 4
+Fin 
+
+On exécute cet algorithme comme suit:
+A <- 5 implique  A = 5
+B <- A + 4 implique A = 5 et B = 9
+A <- A + 1 implique A = 6 et B = 9
+B <- A - 4 implique A = 6 et B = 2
+
+Les variables A et B auront: A = 6 et B = 2
+
+
+Exercice 4:
+
+Début 
+	Variables A, B, C en Entier
+	A <- 3
+	B <- 10
+	C <- A + B
+	B <- A + B
+	A <- C
+Fin 
+
+On exécute cet algorithme comme suit:
+A <- 3 implique A = 3
+B <- 10 implique A = 3 et B = 10
+C <- A + B implique A = 3, B = 10 et C = 13
+B <- A + B implique A = 3, B = 13 et C =13
+A <- C implique A = 13, B = 13 et C = 13
+
+Les variables A, B et C auront: A = 13, B = 13 et C = 13
+
+
+Exercice 5:
+
+Début 
+	Variables A, B en Entier
+	A <- 5
+	B <- 2
+	A <- B
+	B <- A
+Fin
+
+On exécute cet algorithme comme suit:
+A <- 5 implique A = 5
+B <- 2 implique A = 5 et B = 2
+A <- B implique A = 2 et B = 2
+B <- A implique A = 2 et B = 2
+
+Les variables A et B auront: A = 2 et B = 2.
+Non cet algorithme ne permet pas d'échanger les valeurs de A et B.
+En inversant les deux dernières instructions on aura A = 5 et B = 5.
+
+
+Exercice 6: 
+
+Algo: Echanger les valeurs de deux variables
+Début
+	Variables A, B, tmp en Entier
+	tmp <- A
+	A <- B
+	B <- tmp
+Fin
+
+
+Exercice 7:
+
+	Algo: Echanger les valeurs de trois variables 
+	Début
+		Variables A, B, C, tmp en Entier
+		A <- 12
+		B <- 13
+		C <- 3
+		tmp <- B
+		B <- A
+		A <- C
+		C <- tmp
+	Fin
+	
+	
+	
+

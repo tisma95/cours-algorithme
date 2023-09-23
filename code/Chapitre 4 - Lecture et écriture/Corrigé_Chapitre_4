@@ -1,0 +1,70 @@
+Exercice 1:
+	
+	Début 
+		Variable nbre en Réel 
+		Ecrire "Entrer un nombre:"
+		Lire nbre
+		Si nbre > 0 Alors
+			Ecrire nbre + " est un nombre positif"
+		SinonSi nbre < 0 Alors
+			Ecrire nbre + " est un nombre négatif"
+		Sinon 
+			Ecrire nbre + " est nul"
+		FinSi 
+	Fin 
+	
+	
+Exercice 2:
+		
+	Début
+		Variables nbre1, nbre2 en Réels
+		Ecrire "Entrer nombre 1:"
+		Lire nbre1
+		Ecrire "Entrer nombre 2:"
+		Lire nbre2
+		Si (nbre1 * nbre 2) < 0 Alors
+			Ecrire "Le produit de " + nbre1 + " par " + nbre2 + " est négatif."
+		SinonSi (nbre1 * nbre2) > 0 Alors 
+			Ecrire "Le produit de " + nbre1 + " par " + nbre2 + " est positif."
+		Sinon
+			Ecrire "Le produit de " + nbre1 + " par " + nbre2 + " est nul."
+		FinSi 
+	Fin 
+	
+
+Exercice 3:
+
+	DEBUT 
+		VARIABLES nbre1, nbre2, nbre3 en REELS 
+		ECRIRE "Entrer nombre 1:"
+		LIRE nbre1
+		ECRIRE "Entrer nombre 2:"
+		LIRE nbre2
+		ECRIRE "Entrer nombre 3:"
+		LIRE nbre3
+		SI nbre < nbre2 ET nbre2 < nbre3 ALORS 
+			ECRIRE "Nombres rangés en ordre croissant"
+		SINON
+			ECRIRE "Nombres non rangés en ordre croissant"
+		FINSI 
+	FIN 
+	
+	
+Exercice 4:
+
+	Début
+		Variables age en Entier
+		Ecrire "Entrer votre âge svp:"
+		Lire age
+		Si (age = 6 ) Ou (age = 7) Alors 
+			Ecrire "Vous êtes Poussin"
+		SinonSi (age = 8) Ou (age = 9) Alors 
+			Ecrire "Vous êtes Pupille"
+		SinonSi (age = 10) Ou (age = 11) Alors 
+			Ecrire "Vous êtes Minime"
+		SinonSi age > 12 Alors
+			Ecrire "Vous êtes Cadet"
+		Sinon 
+			Ecrire "Catégorie inconnue"
+		FinSi
+	Fin 
